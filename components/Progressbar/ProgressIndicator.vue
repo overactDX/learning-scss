@@ -12,7 +12,7 @@ export default defineComponent({
   layout: "default", 
 
   setup() {
-    const progress = ref(null);
+    const progress = ref<HTMLElement | null>(null);
 
     onMounted(() => {
       const handleScroll = () => {
@@ -20,12 +20,10 @@ export default defineComponent({
         const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrolled = totalScroll / windowHeight;
         if (progress.value) {
-          progress.value.style.transform = `scaleX(${scrolled})`;
+          (progress.value as HTMLElement).style.transform = `scaleX(${scrolled})`;
         }
       };
       window.addEventListener('scroll', handleScroll);
-
-      // Remove the event listener when the component is unmounted
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };

@@ -9,13 +9,13 @@
         <ul class="list-none py-4 px-0 m-0 block max-h-screen">
           <li
             class="p-0 m-6 text-2xl block"
-            v-for="(el, index) in MENULINKS"
+            v-for="(data, index) in MENULINKS"
             :key="index"
           >
             <nuxt-link
               class="link relative inline font-mono font-bold text-5xl duration-300 hover:no-underline"
             >
-              {{ el.name }}
+              {{ data.name }}
             </nuxt-link>
           </li>
         </ul>
@@ -25,35 +25,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
+import { MENULINKS } from "../../../constants/constants";
+
 export default defineComponent({
-  components: {
-  },
+  components: {},
 
   data() {
     return {
-      MENULINKS: [
-        {
-          name: "Home",
-          ref: "home",
-        },
-        {
-          name: "Skills",
-          ref: "skills",
-        },
-        {
-          name: "Projects",
-          ref: "projects",
-        },
-        {
-          name: "Work",
-          ref: "work",
-        },
-        {
-          name: "Contact",
-          ref: "contact",
-        },
-      ],
+      MENULINKS,
     };
   },
 
@@ -66,5 +46,4 @@ export default defineComponent({
 <style>
 @import url(../../../assets/main.scss);
 @import url(../../../assets/hero.scss);
-
 </style>
