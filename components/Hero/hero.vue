@@ -2,6 +2,7 @@
   <section
     ref="targetSection"
     class="w-full flex md:items-center py-8 2xl:container mx-auto xl:px-20 md:px-12 px-4 min-h-screen relative mb-24"
+    :id="MENULINKS[0].ref"
   >
     <div class="flex flex-col pt-40 md:pt-0 select-none">
       <h5 class="font-mono font-medium text-indigo-light seq intro">
@@ -39,12 +40,13 @@ import lottie from "lottie-web";
 import lottieFile from "../../public/lottie/lottie.json"; // Use the correct path to your JSON file
 import Typed from "typed.js";
 import { ref, onMounted } from "vue";
-import { TYPED_STRINGS } from "../../constants/constants";
+import { TYPED_STRINGS ,MENULINKS } from "../../constants/constants";
 
 export default {
   data() {
     return {
       animation: null,
+      MENULINKS,
     };
   },
   setup() {

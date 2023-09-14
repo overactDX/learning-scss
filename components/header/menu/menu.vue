@@ -13,6 +13,7 @@
             :key="index"
           >
             <nuxt-link
+              :to="`#${data.ref}`"
               class="link relative inline font-mono font-bold text-5xl duration-300 hover:no-underline"
             >
               {{ data.name }}
