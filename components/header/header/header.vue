@@ -11,7 +11,7 @@
       </nuxt-link>
 
       <div class="outer-menu relative">
-        <SoundBar />
+        <!-- <SoundBar /> -->
         <!-- SoundButton component can be added here if needed -->
         <input
           aria-labelledby="menu"

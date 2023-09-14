@@ -8,6 +8,8 @@
     <main className="flex flex-col">
       <div className="fixed top-0 left-0 h-screen w-screen -z-1"></div>
       <Hero />
+      <About />
+      <Skill />
     </main>
   </div>
 </template>

@@ -1,15 +1,14 @@
 export const METADATA = {
-  author: "Shubh Porwal",
-  title: "Portfolio | Shubh Porwal",
+  author: "Veerayutt Pakpume",
+  title: "Portfolio | Veerayutt Pakpume",
   description:
-    "Shubh Porwal is a Frontend Developer from Kuwait, interested in crafting beautiful and functional applications.",
+    "Veerayutt Pakpume is a Frontend Developer from Kuwait, interested in crafting beautiful and functional applications.",
   siteUrl: "https://www.shubhporwal.me/",
-  twitterHandle: "@shubh731",
+  twitterHandle: "@overactDX",
   keywords: [
-    "Shubh Porwal",
+    "Veerayutt Pakpume",
     "Frontend Developer",
     "Web Developer",
-    "React Native Developer",
     "Software Developer",
     "Software Engineer",
     "Portfolio",
@@ -150,7 +149,7 @@ export const PROJECTS = [
 export const WORK = [
   {
     id: 1,
-    company: "Dukaan",
+    company: "Moonoi Forward",
     title: "Frontend Developer",
     location: "Bangalore, Karnataka",
     range: "December - Current",
@@ -164,7 +163,7 @@ export const WORK = [
   },
   {
     id: 2,
-    company: "Aviate",
+    company: "LFFINTECTH",
     title: "Frontend Developer Intern",
     location: "Goa",
     range: "May - October 2022",
@@ -178,7 +177,7 @@ export const WORK = [
   },
   {
     id: 3,
-    company: "Spacenos",
+    company: "onedee solution",
     title: "Web Developer Intern",
     location: "Bangalore, Karnataka",
     range: "September - December 2021",
