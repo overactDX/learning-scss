@@ -2,14 +2,6 @@
   <section
     class="w-full relative select-none mt-44"
     :id="MENULINKS[1].ref"
-    data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center"
   >
     <div class="section-container py-16 flex flex-col justify-center">
       <img
