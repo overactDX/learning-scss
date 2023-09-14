@@ -2,5 +2,10 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss'],
+  nitro: {
+    storage: {
+      data: { driver: 'vercelKV' }
+    }
+  },
 })
