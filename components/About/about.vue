@@ -3,7 +3,7 @@
     class="w-full flex md:items-center py-8 2xl:container mx-auto xl:px-20 md:px-12 px-4 min-h-screen relative select-none"
     ref="targetSection"
   >
-    <div class="pt-14 pb-16">
+    <div class="pt-14">
       <h1
         ref="quoteRef"
         class="font-medium text-2.70rem md:text-6xl lg:text-4rem text-center"

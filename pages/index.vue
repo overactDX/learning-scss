@@ -5,14 +5,13 @@
       <HeaderMenu />
     </Header>
     <ProgressbarProgressIndicator />
-
     <main className="flex flex-col">
       <div className="fixed top-0 left-0 h-screen w-screen -z-1"></div>
       <Hero />
       <About />
       <Skill />
       <Project />
-      <Work />
+      <!-- <Work /> -->
     </main>
   </div>
 </template>
@@ -46,5 +45,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style lang="scss"></style>

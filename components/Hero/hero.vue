@@ -1,7 +1,7 @@
 <template>
   <section
     ref="targetSection"
-    class="w-full flex md:items-center py-8 2xl:container mx-auto xl:px-20 md:px-12 px-4 min-h-screen relative mb-24"
+    class="w-full flex md:items-center py-8 2xl:container mx-auto xl:px-20 md:px-12 px-4 min-h-screen relative"
     :id="MENULINKS[0].ref"
   >
     <div class="flex flex-col pt-40 md:pt-0 select-none">

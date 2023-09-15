@@ -20,10 +20,9 @@
         </h2>
       </div>
       <div
-        :class="{ 'mt-12': clientHeight > 650, 'mt-8': clientHeight <= 650 }"
         class="flex project-wrapper w-fit seq"
       >
-        <ProjectTile
+        <ProjectProjectTitle
           v-for="(project, index) in PROJECTS"
           :key="project.name"
           :class="
@@ -42,10 +41,10 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MENULINKS, PROJECTS } from "../../constants/constants";
 
 export default {
-  props: {
-    isDesktop: Boolean,
-    clientHeight: Number,
-  },
+  // props: {
+  //   isDesktop: Boolean,
+  //   clientHeight: Number,
+  // },
   data() {
     return {
       MENULINKS,
