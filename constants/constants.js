@@ -70,18 +70,16 @@ export const SKILLS = {
     "css",
     "javascript",
     "typescript",
-    "sass",
-    // "cpp",
-    // "java",
-    // "python",
-    "nodejs",
-    "webpack",
-    "vite",
-    "firebase",
-    // "moralis",
-    // "stripe",
     "figma",
-    "tanstack-query",
+    "sass",
+    "tailwind",
+  ],
+  framwork: [
+    "react",
+    "nextjs",
+    "vuejs",
+    "nuxtjs",
+    "angular",
   ],
   librariesAndFrameworks: [
     "react",
@@ -92,8 +90,8 @@ export const SKILLS = {
     "antdesign",
     "chakra-ui",
   ],
-  databases: ["mysql", "mongodb"],
-  other: ["git", "sanity-io"],
+  // databases: ["mysql", "mongodb"],
+  other: ["git", "gitlab"],
 };
 
 export const PROJECTS = [

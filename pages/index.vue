@@ -10,6 +10,7 @@
       <Hero />
       <About />
       <Skill />
+      <Project />
     </main>
   </div>
 </template>

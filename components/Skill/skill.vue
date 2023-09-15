@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="w-full relative select-none mt-44"
-    :id="MENULINKS[1].ref"
-  >
+  <section class="w-full relative select-none mt-44" :id="MENULINKS[1].ref">
     <div class="section-container py-16 flex flex-col justify-center">
       <img
         src="/right-pattern.svg"
@@ -44,19 +41,41 @@
             </div>
           </div>
         </div>
-        <!-- For Databases -->
-        <div class="flex flex-wrap mt-10">
-          <div
-            class="mr-16 xs:mr-20 mb-6"
-            v-for="databaseSkill in SKILLS.databases"
-            :key="databaseSkill"
+
+        <div class="mt-10">
+          <h3
+            class="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq"
           >
-            <h3
-              class="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq"
+            Framework
+          </h3>
+          <div class="flex flex-wrap gap-6 transform-gpu seq">
+            <div
+              v-for="skill in SKILLS.framwork"
+              :key="skill"
+              class="w-12 h-12"
             >
-              DATABASES
-            </h3>
-            <div class="flex flex-wrap gap-6 transform-gpu seq">
+              <img
+                :src="`/skills/${skill}.svg`"
+                :alt="skill"
+                width="50"
+                height="50"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="mt-10">
+          <h3
+            class="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq"
+          >
+            DATABASES
+          </h3>
+          <div class="flex flex-wrap gap-6 transform-gpu seq">
+            <div
+              v-for="databaseSkill in SKILLS.databases"
+              :key="databaseSkill"
+              class="w-12 h-12"
+            >
               <img
                 :src="`/skills/${databaseSkill}.svg`"
                 :alt="databaseSkill"
@@ -65,21 +84,20 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <!-- For Other Skills -->
-        <div class="flex flex-wrap mt-10">
-          <div
-            class="mr-16 xs:mr-20 mb-6"
-            v-for="otherSkill in SKILLS.other"
-            :key="otherSkill"
+        <div class="mt-10">
+          <h3
+            class="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq"
           >
-            <h3
-              class="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4 seq"
+            Other
+          </h3>
+          <div class="flex flex-wrap gap-6 transform-gpu seq">
+            <div
+              v-for="otherSkill in SKILLS.other"
+              :key="otherSkill"
+              class="w-12 h-12"
             >
-              Other
-            </h3>
-            <div class="flex flex-wrap gap-6 transform-gpu seq">
               <img
                 :src="`/skills/${otherSkill}.svg`"
                 :alt="otherSkill"
@@ -89,8 +107,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Add similar code for LIBRARIES AND FRAMEWORKS, DATABASES, and Other sections -->
       </div>
     </div>
   </section>
