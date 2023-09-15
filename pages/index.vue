@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Loader v-if="showLoader" />
+  <Loader v-if="showLoader" />
+  <div v-if="!showLoader">
     <Header>
       <HeaderMenu />
     </Header>
@@ -35,18 +35,14 @@ export default defineComponent({
   },
 
   methods: {
-    hideLoaderAndScrollToTop() {
+    loader() {
       setTimeout(() => {
         this.showLoader = false;
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }, 2000);
+      }, 3000);
     },
   },
   mounted() {
-    this.hideLoaderAndScrollToTop();
+    this.loader();
   },
 });
 </script>
