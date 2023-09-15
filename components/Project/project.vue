@@ -20,7 +20,7 @@
         </h2>
       </div>
       <div
-        class="flex project-wrapper w-fit seq"
+        class="flex flex-col project-wrapper w-fit seq"
       >
         <ProjectProjectTitle
           v-for="(project, index) in PROJECTS"

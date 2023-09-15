@@ -1,7 +1,7 @@
 <template>
   <a
     :href="project.url"
-    class="overflow-hidden rounded-3xl"
+    class="rounded-3xl"
     ref="projectCard"
     target="_blank"
     rel="noreferrer"
