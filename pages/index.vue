@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Loader v-if="showLoader" />
     <Header>
       <HeaderMenu />
     </Header>
@@ -11,6 +12,7 @@
       <About />
       <Skill />
       <Project />
+      <Work />
     </main>
   </div>
 </template>
@@ -23,10 +25,30 @@ defineComponent({
 });
 
 export default defineComponent({
-  components: {},
-
+  data() {
+    return {
+      showLoader: true,
+    };
+  },
   setup() {
     return {};
   },
+
+  methods: {
+    hideLoaderAndScrollToTop() {
+      setTimeout(() => {
+        this.showLoader = false;
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }, 2000);
+    },
+  },
+  mounted() {
+    this.hideLoaderAndScrollToTop();
+  },
 });
 </script>
+
+<style lang="scss"></style>
