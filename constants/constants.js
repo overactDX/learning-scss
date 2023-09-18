@@ -133,15 +133,15 @@ export const PROJECTS = [
     url: "https://shubh73-inshorts.netlify.app/",
     tech: ["react", "chakra-ui", "alan"],
   },
-  {
-    name: "Tesla",
-    image: "/projects/tesla.webp",
-    blurImage: "/projects/blur/tesla-blur.webp",
-    description: "A Tesla React Native App 🏎️",
-    gradient: ["#142D46", "#2E4964"],
-    url: "https://github.com/shubh73/tesla",
-    tech: ["react"],
-  },
+  // {
+  //   name: "Tesla",
+  //   image: "/projects/tesla.webp",
+  //   blurImage: "/projects/blur/tesla-blur.webp",
+  //   description: "A Tesla React Native App 🏎️",
+  //   gradient: ["#142D46", "#2E4964"],
+  //   url: "https://github.com/shubh73/tesla",
+  //   tech: ["react"],
+  // },
 ];
 
 export const WORK = [

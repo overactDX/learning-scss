@@ -36,6 +36,6 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 @import url('../../assets/main.scss');
 </style>

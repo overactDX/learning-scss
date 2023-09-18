@@ -1,7 +1,58 @@
 <template>
-  <a
+  <div class="grid grid-cols-6 col-span-2 gap-2 pt-10 pb-20">
+    <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+      <a :href="project[0].url">
+        <img
+          class="h-full w-full object-cover object-top"
+          :src="project[0].image"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
+      <a :href="project[1].url">
+        <img
+          class="h-full w-full object-cover object-top"
+          :src="project[1].image"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+      <a :href="project[2].url">
+        <img
+        class="h-full w-full object-cover object-top"
+        :src="project[2].image"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+      <a :href="project[2].url">
+        <img
+        class="h-full w-full object-cover object-top"
+        :src="project[2].image"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="relative overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
+      <div
+        class="text-white text-xl absolute inset-0 bg-slate-900/80 flex justify-center items-center"
+      >
+        + 23
+      </div>
+      <img
+      class="h-full w-full object-cover object-top"
+        src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+        alt=""
+      />
+    </div>
+  </div>
+  <!-- <a
     :href="project.url"
-    class="rounded-3xl"
+    class="overflow-hidden rounded-3xl"
     ref="projectCard"
     target="_blank"
     rel="noreferrer"
@@ -61,7 +112,7 @@
         {{ project.description }}
       </h2>
     </div>
-  </a>
+  </a> -->
 </template>
 
 <script>
@@ -72,56 +123,11 @@ export default {
   components: {},
   props: {
     project: Object,
-    classes: String,
-    isDesktop: Boolean,
-  },
-  setup(props, { refs }) {
-    const projectCard = ref(null);
-    // Styles
-    const projectCardStyle = {
-      maxWidth: props.isDesktop ? "calc(100vw - 2rem)" : "calc(100vw - 4rem)",
-      flex: "1 0 auto",
-      WebkitMaskImage: "-webkit-radial-gradient(white, black)",
-    };
-    const gradientStyle = {
-      background: `linear-gradient(90deg, ${props.project.gradient[0]} 0%, ${props.project.gradient[1]} 100%)`,
-    };
-    const gradientTopStyle = {
-      background: `linear-gradient(180deg, ${props.project.gradient[0]} 0%, rgba(0,0,0,0) 100%)`,
-    };
-    const gradientBottomStyle = {
-      background: `linear-gradient(0deg, ${props.project.gradient[0]} 10%, rgba(0,0,0,0) 100%)`,
-    };
-    const nameTextStyle = {
-      transform: "translateZ(3rem)",
-    };
-    const descriptionTextStyle = {
-      transform: "translateZ(0.8rem)",
-    };
-    // Tilt Options
-    const options = {
-      max: 10,
-      speed: 400,
-      glare: true,
-      "max-glare": 0.2,
-      gyroscope: false,
-    };
-    onMounted(() => {
-      VanillaTilt.init(projectCard.value, options);
-    });
-    return {
-      projectCard,
-      projectCardStyle,
-      gradientStyle,
-      gradientTopStyle,
-      gradientBottomStyle,
-      nameTextStyle,
-      descriptionTextStyle,
-    };
   },
 };
 </script>
 
-<style scoped>
+<style scoped module>
 @import url("../projectTitle/title.scss");
+
 </style>

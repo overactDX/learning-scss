@@ -1,5 +1,5 @@
 <template>
-  <Loader v-if="showLoader" />
+  <!-- <Loader v-if="showLoader" /> -->
   <div v-if="!showLoader">
     <Header>
       <HeaderMenu />
@@ -10,8 +10,11 @@
       <Hero />
       <About />
       <Skill />
-      <Project />
+      <!-- <Project /> -->
+      <!-- <Contact /> -->
       <!-- <Work /> -->
+      <!-- <div className="pt-10 sm:pt-16 bg-gray-dark-4"></div> -->
+      <!-- <LazyScript /> -->
     </main>
   </div>
 </template>
@@ -45,3 +48,7 @@ export default defineComponent({
   },
 });
 </script>
+
+<style  lang="scss">
+@import url('../assets/main.scss');
+</style>

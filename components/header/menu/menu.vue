@@ -44,7 +44,7 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="scss" scoped>
 @import url(../../../assets/main.scss);
 @import url(../../../assets/hero.scss);
 </style>
