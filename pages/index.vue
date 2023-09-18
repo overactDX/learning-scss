@@ -1,5 +1,5 @@
 <template>
-  <!-- <Loader v-if="showLoader" /> -->
+  <Loader v-if="showLoader" />
   <div v-if="!showLoader">
     <Header>
       <HeaderMenu />
