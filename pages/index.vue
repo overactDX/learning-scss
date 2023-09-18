@@ -10,8 +10,8 @@
       <Hero />
       <About />
       <Skill />
-      <!-- <Project /> -->
-      <!-- <Contact /> -->
+      <Project />
+      <Contact />
       <!-- <Work /> -->
       <!-- <div className="pt-10 sm:pt-16 bg-gray-dark-4"></div> -->
       <!-- <LazyScript /> -->
