@@ -3,7 +3,7 @@
     <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
       <a :href="project[0].url">
         <img
-          class="h-full w-full object-cover object-top"
+          class="h-full w-full object-cover"
           :src="project[0].image"
           alt=""
         />
@@ -12,7 +12,7 @@
     <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
       <a :href="project[1].url">
         <img
-          class="h-full w-full object-cover object-top"
+          class="h-full w-full object-cover"
           :src="project[1].image"
           alt=""
         />
@@ -22,7 +22,7 @@
     <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
       <a :href="project[2].url">
         <img
-        class="h-full w-full object-cover object-top"
+        class="h-full w-full object-cover"
         :src="project[2].image"
           alt=""
         />
@@ -31,7 +31,7 @@
     <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
       <a :href="project[2].url">
         <img
-        class="h-full w-full object-cover object-top"
+        class="h-full w-full object-cover"
         :src="project[2].image"
           alt=""
         />
@@ -44,7 +44,7 @@
         + 23
       </div>
       <img
-      class="h-full w-full object-cover object-top"
+      class="h-full w-full object-cover"
         src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
         alt=""
       />
